@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="PTS debug tracking and support"/>
+        <title>PTS Renewed</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="shortcut icon" href="./images/power-logo.png">
+    </head>
+    <body>
+        <nav>
+            <div class="topnav">
+                <span class="logo">PTS</span> 
+                <a href="./forum.html">Forum</a>
+                <a href="./docs.html">Helps and Docs</a>
+            </div>
+       </nav>
+        <header style="text-align:center"><h1>PTS</h1></header>
+        <hr>
+        <div style="background-color: gold">FORM</div>
+        <p>
+          <!--use GET, not POST-->  
+            <form method="POST">
+                FIRST NAME: 
+                    <input type="text" name="fistname"><br><br>
+                LAST NAME: 
+                    <input type="text"name="lastname"><br><br>
+                GENDER<br> 
+                    <input type="radio" name="GENDER"value="male">MALE<br>
+                    <input type="radio" name="GENDER"value="female">FEMALE<br>
+                    <input type="radio" name="GENDER"value="other">OTHER<br><br>
+                EMAIL: 
+                    <input type="email"name="email"><br><br>
+                PASSWORD
+                    <input type="password"name="password"min="5"><br><br>
+                BIRTHDAY: 
+                    <input type="date" name="birthday"><br><br>
+                CAR TYPE<br>
+                    <input type="checkbox" name="automatic" >AUTOMATIC<br>
+                    <input type="checkbox" name="standart" >STANDART<br><br>
+                CAR BRAND<br>
+                <select name="car brand">
+                    <option value="VW" name="vw">VW</option>
+                    <option value="VOLVO" name="volvo">VOLVO</option>
+                    <option value="NISSAN" name="nissan">NISSAN</option>
+                    <option value="HYUNDAI" name="hyundai">HYUNDAI</option>
+                    <option value="TOYOTA"name="toyota">TOYOTA</option>   
+                </select><br><br>
+                    <input type="submit" value="welcome">
+                <input type="reset" value="delete">
+        
+            </form>
+        </p>
+    </body>
+
+</html>
