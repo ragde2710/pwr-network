@@ -1,19 +1,39 @@
-body
-{
-    background: #e8e8e4;
-    color: #0096c7;
-    text-align: left;
-    font-family: Arial;
-    font-size: 32px;
-    margin: 10px;
-    padding: 5px;
+/*____________*/
+/*--GENERAL---*/
+/*____________*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px;
 }
 
+h1 {
+	font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 /*___________*/
 /*--HEADER---*/
 /*___________*/
 #main-header {
-	background: #333;
+	background: #092d5c;
 	color: white;
 	height: 80px;
 	
@@ -50,7 +70,7 @@ body
 		color: #999;
 	}
 /*_________________*/
-/*---NAVEGACION----*/
+/*-----NAV-BAR-----*/
 /*_________________*/
 nav {
 	float: right;
@@ -76,17 +96,35 @@ nav {
 				nav ul li a:hover {
 					background: #0b76a6;
 				}
-
-#container
-{
-    width: 70%;
-    padding: 0;
-    text-align: left;
-    border: 1px solid #DDD;
-    margin: 0 auto;
+/*_________________*/
+/*---CONTENT--------*/
+/*_________________*/
+#main-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+              }           
+    #main-content header,
+    #main-content .content {
+      padding: 40px;
+        }
+                    
+/*_________________*/
+/*---FOOTER--------*/
+/*_________________*/
+#main-footer {
+	background: #092d5c;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
 }
-
-#container h1
-{
-    font-size: 20px;
-}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
