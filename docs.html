@@ -8,20 +8,36 @@
         <link rel="shortcut icon" href="./images/power-logo.png">
     </head>
     <body>
-        <header>
+        <header id="main-header">
+            <a id="logo-header">
+                <span class="site-name">Power Systems</span>
+                <span class="site-desc">Power Apps</span>
+            </a>
             <nav>
-                <div class="topnav">
-                    <span class="logo">Help and Docs</span> 
-                    <a class="active" href="./pts.html">PTS</a>
-                    <a href="./forum.html">Forum</a>
+                <ul> 
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pts.html">PTS</a></li>
+                    <li><a href="./forum.html">Forum</a></li>
+                    <li><a href="./docs.html">Helps and Docs</a></li>
+                </ul>
+            </nav>
+        </header>      
+        <section id="main-content">
+            <article>
+                <header>
+                    <h1>Helps & Docs</h1>
+                </header>
+                <div class="content">
+                    <p>Este apartado ha sido creado para resolver dudas entre los TA
+                        <br>
+                    El pdf cargado es solo como referencia
+                    </p>
+                    <embed src="./resources/pdfs/network_pdf.pdf" type="application/pdf" width="100%" height="600px" />
                 </div>
-           </nav>
-        </header>
-        <div class="banner">
-            <span>BANNER</span>
-        </div>   
-        <footer>
-            <p>made in T3</p>
-        </footer>         
+            </article>
+        </section>
+        <footer id="main-footer">
+            <p>&copy; 2021 <a href=#>Made by T3</a></p>
+        </footer>          
     </body>
 </html>
