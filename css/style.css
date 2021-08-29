@@ -29,6 +29,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.navbar_logo{
+	height: 70px;
+}
 /*___________*/
 /*--HEADER---*/
 /*___________*/
@@ -45,28 +49,34 @@ img {
 	#main-header a {
 		color: white;
 	}
+
+
 /*_________________*/
 /*---LOGO-HEADER---*/
 /*_________________*/
+
+
  #logo-header {
-	float: left;
+	float: right;
 	padding: 15px 0 0 20px;
 	text-decoration: none;
 }
 	#logo-header:hover {
 		color: #0b76a6;
 	}
-	
+
 	#logo-header .site-name {
 		display: block;
 		font-weight: 700;
 		font-size: 1.2em;
+		padding-right: 10px;
 	}
 	
 	#logo-header .site-desc {
 		display: block;
 		font-weight: 300;
 		font-size: 0.8em;
+		padding-right: 10px;
 		color: #999;
 	}
 /*_________________*/
