@@ -111,8 +111,8 @@ nav {
 /*_________________*/
 #main-content {
     background: white;
-    width: 90%;
-    max-width: 800px;
+    width: auto;
+    max-width: 90%;
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
               }           
@@ -136,5 +136,38 @@ nav {
 	}
 	
 	#main-footer a {
+		text-decoration: none;
 		color: white;
 	}
+	.footer-content{
+		color:rgb(10, 10, 88);
+		text-align: center;
+	}
+/*_________________*/
+/*---Tabla--------*/
+/*_________________*/
+#table-golden{
+	margin: 50px auto;
+	width: auto; 
+}
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td{
+	padding: 20px;
+}
+thead{
+	background-color: #092d5c;
+	border-bottom: solid 5px #0b76a6;
+	color: white;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+tr:hover td{
+	background-color: #0b76a6;
+	color: white;
+}
