@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;    
+    background-color: aqua;
+    padding: 30px;
+}
+
+.header {
+height: 80vh;
+background-image: linear-gradient(to right bottom, rgba(112, 206, 112, 0.6), rgba(46, 128, 46, .6));
+background-position: top;
+background-size: cover;
+clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.header-box {
+    position:absolute;
+    top: 25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 5px rgba(114, 226, 86, 0.8);
+}
+.title-header {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 30px;
+
+    animation: animationTitleLeft  2s;
+}
+
+.subtitle-header {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 23px;
+
+    animation: animationTitleRight 2.5s ease-out;
+}
+
+@keyframes animationTitleLeft {
+    0%{
+        opacity: 0;
+        transform:translateX(-100px) 
+    };
+    50%{
+        transform:translateX(-10px)
+    };
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    };
+}
+
+@keyframes animationTitleRight {
+    0%{
+        opacity: 1;
+        transform:translateX(100px) 
+    };
+    50%{
+        transform:translateX(10px)
+    };
+    100%{
+        opacity: 0;
+        transform: translateX(0)
+    };
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.menu__image {    
+    border: .5px gray;
+    border-radius: 50px;
+    height: 300px;
+    width: 300px;
+    margin: 35px;
+    box-shadow: 10px 10px 4px rgba(101, 110, 78, 0.616)
+}
+.menu__image:hover {
+    transition: all .3s;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.753)
+}
+
+.footer {
+    background: rgb(87, 235, 119);
+    position: static;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+.menu__image-text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 10px 7px 10px black;
+}
