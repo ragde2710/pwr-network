@@ -8,67 +8,94 @@
         <link rel="shortcut icon" href="./resources/images/power-logo.png">
     </head>
     <body>
-        <nav>       
-            <a href="./index.html">  <!--hover-->
-                <img class="navbar_logo" 
-                    src="./resources/images/logoheader.png" 
-                    alt="Logo Power"> 
-            </a>
-            <ul> 
-                <li><a href="./pts.html">PTS</a></li>
-                <li><a href="./forum.html">Forum</a></li>
-                <li><a href="./docs.html">Helps and Docs</a></li>
+        <nav class="nav-bar">      
+            <ul class="nav-bar_ul">
+                <li>  
+                    <a href="./index.html">  <!--hover-->
+                        <img class="navbar_logo" 
+                            src="./resources/images/logoheader.png" 
+                            alt="Logo Power"
+                        >
+                    </a>
+                </li>
+                <div class="nav-bar_left">
+                    <li>
+                        <a class="nav-bar_item" href="./pts.html">PTS</a>
+                    </li>
+                    <li >
+                        <a class="nav-bar_item" href="./forum.html">Forum</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
+                    </li>
+                </div>
             </ul>
         </nav>
         <header class="header">
             <h1 class="title-header">Golden Inventory</h1>
-            <div id="table-golden">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Cell</th>
-                            <th>Model</th>
-                            <th>SO</th>
-                            <th>Status</th>
-                            <th>Comments</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>A110</td>
-                        <td>Tuleta 4u</td>
-                        <td> I series</td>
-                        <td>Running</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>E207</td>
-                        <td>Zeppellin</td>
-                        <td> P series</td>
-                        <td>Active</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>B253</td>
-                        <td>Brazo</td>
-                        <td> P series</td>
-                        <td>Bad</td>
-                        <td>FSP not connect</td>
-                    </tr>
-                    <tr>
-                        <td>B207</td>
-                        <td>Brazo</td>
-                        <td> P series</td>
-                        <td>Running</td>
-                        <td>Borrowed card return upon completion of tests </td>
-                    </tr>
-                </table>
-            </div>
-        </header>      
+        </header> 
+        <div class="button-so">
+            <br>SO
+            <select name="SO">
+                <option value="PS" name="P-series">P-series</option>
+                <option value="IS" name="I-series">I-series</option>
+                <option value="DNLI" name="Denali">Denali</option>
+            </select>
 
-        <footer id="main-footer">
-                <p>&copy; 2021 
-                    <a href="./colabs.html">Made by T3</a>
-                </p>
+        </div>
+        <div class="tableGolden">
+            <table class="tableGolden-container">
+                <thead>
+                    <tr>
+                        <th># Golden</th>
+                        <th>System</th>
+                        <th>SO</th>
+                        <td>Work Unit</td>
+                        <td>VPD Serial</td>
+                        <td>Macs</td>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>G1</td>
+                    <td>Tuleta 4u</td>
+                    <td> I series</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <th>Funcionando al 100%</th>
+                </tr>
+                <tr>
+                    <td>G2</td>
+                    <td>Zeppellin</td>
+                    <td> P series</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <th>Funcionando al 100%</th>
+                </tr>
+                <tr>
+                    <td>G3</td>
+                    <td>Brazo</td>
+                    <td> P series</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <th>Funcionando al 100%</th>
+                </tr>
+                <tr>
+                    <td>G4</td>
+                    <td>Brazo</td>
+                    <td> P series</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <td>##########</td>
+                    <th>Funcionando al 100%</th>
+                </tr>
+            </table>
+        </div>
+        <footer class="footer">
+            <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3</a>
         </footer>
     </body>          
 </html>
