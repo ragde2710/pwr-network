@@ -36,19 +36,7 @@ img {
 /*___________*/
 /*--HEADER---*/
 /*___________*/
-#main-header {
-	background: #092d5c;
-	color: white;
-	height: 80px;
-	
-	width: 100%;
-	left: 0;
-	top: 0;
-	position: fixed;
-}	
-	#main-header a {
-		color: white;
-	}
+
 
 
 /*_________________*/
@@ -79,95 +67,3 @@ img {
 		padding-right: 10px;
 		color: #999;
 	}
-/*_________________*/
-/*-----NAV-BAR-----*/
-/*_________________*/
-nav {
-	float: right;
-}
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
-	}
-	
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-			
-				nav ul li a:hover {
-					background: #0b76a6;
-				}
-/*_________________*/
-/*---CONTENT--------*/
-/*_________________*/
-#main-content {
-    background: white;
-    width: auto;
-    max-width: 90%;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-              }           
-    #main-content header,
-    #main-content .content {
-      padding: 40px;
-        }
-                    
-/*_________________*/
-/*---FOOTER--------*/
-/*_________________*/
-#main-footer {
-	background: #092d5c;
-	color: white;
-	text-align: center;
-	padding: 20px;
-	margin-top: 40px;
-}
-	#main-footer p {
-		margin: 0;
-	}
-	
-	#main-footer a {
-		text-decoration: none;
-		color: white;
-	}
-	.footer-content{
-		color:rgb(10, 10, 88);
-		text-align: center;
-	}
-/*_________________*/
-/*---Tabla--------*/
-/*_________________*/
-#table-golden{
-	margin: 50px auto;
-	width: auto; 
-}
-table{
-	background-color: white;
-	text-align: left;
-	border-collapse: collapse;
-	width: 100%;
-}
-th, td{
-	padding: 20px;
-}
-thead{
-	background-color: #092d5c;
-	border-bottom: solid 5px #0b76a6;
-	color: white;
-}
-tr:nth-child(even){
-	background-color: #ddd;
-}
-tr:hover td{
-	background-color: #0b76a6;
-	color: white;
-}
