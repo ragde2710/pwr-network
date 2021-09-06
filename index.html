@@ -4,44 +4,47 @@
         <meta charset="UTF-8"/>
         <meta name="PTS debug tracking and support"/>
         <title>PTS Renewed</title>
-        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/Style.css"/>
         <link rel="shortcut icon" href="./resources/images/power-logo.png">
     </head>
     <body>
-        <header id="main-header">
-            <a href="./index.html">
-                <img class="navbar_logo" src="./resources/images/logoheader.png" alt="Logo Power"> 
-            </a>
+        <nav class="nav-bar">
+            <ul class="nav-bar_ul">
+                <a href="./index.html">
+                    <img class="navbar_logo" 
+                        src="./resources/images/logoheader.png" 
+                        alt="Logo Power"> 
                 </a>
-                <nav>
-                    <ul> 
-                        <li><a href="./pts.html">PTS</a></li>
-                        <li><a href="./forum.html">Forum</a></li>
-                        <li><a href="./docs.html">Helps and Docs</a></li>
-                        <li><a href="./golden.html">Golden Inventory</a></li>
-                    </ul>
-                </nav>
-            </header>      
-
+                <div class="nav-bar_left">
+                    <li>
+                        <a class="nav-bar_item" href="./pts.html">PTS</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./forum.html">Forum</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./golden.html">Golden Inventory</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>    
             <section id="main-content">
-                <article>
-                    <header>
-                        <h1>IBM Power Systems</h1>
-                    </header>
-                    <div align="center">
-                        <img src="./resources/images/PowerSystems_Color.png" alt="Power Systems"/>
-                    </div>
-                    <div class="content">
-                        <p>
-                        Systems is a family of server computers from IBM that are based on its POWER processors. 
-                        <br>
-                        It was created in 2008 as a merger of the System p and System i product lines.
-                        Predecessors</p> 
-                    </div>
-                </article>
+                        <img class="header_img" 
+                             src="./resources/images/PowerSystems_Color.png" 
+                             alt="Power Systems"/>    
+                        <div class="header-text">
+                            <p>
+                            Systems is a family of server computers from IBM that are based on its POWER processors. 
+                            <br>
+                            It was created in 2008 as a merger of the System p and System i product lines.
+                            Predecessors</p> 
+                        </div>
             </section>
-        <footer id="main-footer">
-            <p>&copy; 2021 <a href="./colabs.html">Made by T3</a></p>
-        </footer>         
+            <footer class="footer">
+                <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3</a>
+            </footer>
     </body>
 </html>

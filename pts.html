@@ -3,61 +3,69 @@
         <meta charset="UTF-8"/>
         <meta name="PTS debug tracking and support"/>
         <title>PTS Renewed</title>
-        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/Style.css"/>
         <link rel="shortcut icon" href="./images/power-logo.png">
     </head>
     <body>
-        <header id="main-header">
-            <a href="./index.html">
-                <img class="navbar_logo" src="./resources/images/logoheader.png" alt="Logo Power"> 
-            </a> 
-            <nav>
-                <ul> 
-                    <li><a href="./pts.html">PTS</a></li>
-                    <li><a href="./forum.html">Forum</a></li>
-                    <li><a href="./docs.html">Helps and Docs</a></li>
-                    <li><a href="./golden.html">Golden Inventory</a></li>
-                </ul>
-            </nav>
-        </header>      
-        <hr>
-        <div style="background-color: gold">FORM</div>
-        <p>
+        <nav class="nav-bar">      
+            <ul class="nav-bar_ul">
+                <li>  
+                    <a href="./index.html">  <!--hover-->
+                        <img class="navbar_logo" 
+                            src="./resources/images/logoheader.png" 
+                            alt="Logo Power"
+                        >
+                    </a>
+                </li>
+                <div class="nav-bar_left">
+                    <li >
+                        <a class="nav-bar_item" href="./forum.html">Forum</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar_item" href="./golden.html">Golden Inventory</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <header class="header">
+            <h1 class="title-header">PTS</h1>
+        </header>  
+        <div class="header_text-help">
           <!--use GET, not POST-->  
-            <form method="POST">
-                FIRST NAME: 
-                    <input type="text" name="fistname"><br><br>
-                LAST NAME: 
-                    <input type="text"name="lastname"><br><br>
-                GENDER<br> 
-                    <input type="radio" name="GENDER"value="male">MALE<br>
-                    <input type="radio" name="GENDER"value="female">FEMALE<br>
-                    <input type="radio" name="GENDER"value="other">OTHER<br><br>
-                EMAIL: 
+            <form class="header_text-help" method="POST">
+                Serial number: 
+                    <input type="text" name="fistname">
+                    <br><br>
+                Sistem Number: 
+                    <input type="text"name="lastname">
+                    <br><br>
+                    <input type="radio" name="GENDER"value="male">VPD<br>
+                    <input type="radio" name="GENDER"value="female">No serial<br>
+                    <input type="radio" name="GENDER"value="other">TA location<br><br>
+                TA Cluster
                     <input type="email"name="email"><br><br>
-                PASSWORD
+                PS
                     <input type="password"name="password"min="5"><br><br>
-                BIRTHDAY: 
-                    <input type="date" name="birthday"><br><br>
-                CAR TYPE<br>
-                    <input type="checkbox" name="automatic" >AUTOMATIC<br>
-                    <input type="checkbox" name="standart" >STANDART<br><br>
-                CAR BRAND<br>
-                <select name="car brand">
-                    <option value="VW" name="vw">VW</option>
-                    <option value="VOLVO" name="volvo">VOLVO</option>
-                    <option value="NISSAN" name="nissan">NISSAN</option>
-                    <option value="HYUNDAI" name="hyundai">HYUNDAI</option>
-                    <option value="TOYOTA"name="toyota">TOYOTA</option>   
-                </select><br><br>
-                    <input type="submit" value="welcome">
+                Part<br>
+                    <input type="checkbox" name="automatic" >xyz<br>
+                    <input type="checkbox" name="standart" >xyz<br><br>
+                Area<br>
+                    <select name="car brand">
+                        <option value="VW" name="vw">Fab test</option>
+                        <option value="VOLVO" name="volvo">Test</option>
+                        <option value="NISSAN" name="nissan">MES</option>
+                        <option value="HYUNDAI" name="hyundai">Denali</option>   
+                    </select>
+                    <br><br>
+                <input type="submit" value="continue">
                 <input type="reset" value="delete">
-        
             </form>
-        </p>
-        <footer id="main-footer">
-            <p>&copy; 2021 <a href="./colabs.html">Made by T3</a></p>
-        </footer>   
+        </div>
+        <footer class="footer">
+            <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3</a>
+        </footer>  
     </body>
-
 </html>
