@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="PTS debug tracking and support" />
     <title>PTS Renewed</title>
+    <link rel="stylesheet" href="./css/main-style.css" />
     <link rel="stylesheet" href="./css/forum-style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="shortcut icon" href="./images/power-logo.png">
 </head>
 
@@ -37,8 +40,9 @@
                 <h1>Aporte: Comando sginfo</h1>
                 <p>
                     El comando sginfo nos permite obtener información de los discos SCSI instalados en el sistema. Para
-                    ello solo tenemos que ejecutar el comando con la opción deseada –según la información buscada– e indicar el dispositivo.
-                <br><br>
+                    ello solo tenemos que ejecutar el comando con la opción deseada –según la información buscada– e
+                    indicar el dispositivo.
+                    <br><br>
                     Por ejemplo:
                     <br>
                     <p class="line">
@@ -46,47 +50,51 @@
                     </p>
                     <br><br>
                     <p>
-                        La opción y el dispositivo indicado son -s y /dev/sda, respectivamente. Con -s obtenemos el número
-                    de serie (serial) del
-                    dispositivo. Así:
-                    <br><br>
-                    <p class="line">
-                        [/home/user 00:40:20]sginfo -s /dev/sda1<br>
-                        Serial Number 'VBcb66812d-49d22b80 '<br>
-                    </p>
-                    <br>
-                    <p>
-                        Si ejecutamos el comando sin opciones nos arroja información sobre el fabricante, el código de
-                    producto y la versión del firmware:
-                    </p> 
-                    <br><br>
-                    <p class="line">
-                        [/home/user 00:40:29]sginfo /dev/sda<br>
-                        INQUIRY response (cmd: 0x12)<br>
-                        ----------------------------<br>
-                        Device Type 0<br>
-                        Vendor: ATA<br>
-                        Product: VBOX HARDDISK<br>
-                        Revision level: 1.0<br>
-                    </p>
+                        La opción y el dispositivo indicado son -s y /dev/sda, respectivamente. Con -s obtenemos el
+                        número
+                        de serie (serial) del
+                        dispositivo. Así:
+                        <br><br>
+                        <p class="line">
+                            [/home/user 00:40:20]sginfo -s /dev/sda1<br>
+                            Serial Number 'VBcb66812d-49d22b80 '<br>
+                        </p>
+                        <br>
+                        <p>
+                            Si ejecutamos el comando sin opciones nos arroja información sobre el fabricante, el código
+                            de
+                            producto y la versión del firmware:
+                        </p>
+                        <br><br>
+                        <p class="line">
+                            [/home/user 00:40:29]sginfo /dev/sda<br>
+                            INQUIRY response (cmd: 0x12)<br>
+                            ----------------------------<br>
+                            Device Type 0<br>
+                            Vendor: ATA<br>
+                            Product: VBOX HARDDISK<br>
+                            Revision level: 1.0<br>
+                        </p>
                     </p>
                     <br>
                     <p>
                         Si queremos averiguar mayor información utilizamos la opción -a. Etcétera.
-                        Este comando lo utilizamos recientemente en el área de Pruebas para ayudarnos a resolver una falla.
+                        Este comando lo utilizamos recientemente en el área de Pruebas para ayudarnos a resolver una
+                        falla.
                         La falla se había
-                        presentado en un sistema 5105 (Machine type) con algunos drawers 5147 (MT) de almacenamiento, si mal
+                        presentado en un sistema 5105 (Machine type) con algunos drawers 5147 (MT) de almacenamiento, si
+                        mal
                         no recuerdo. En
                         realidad era un conjunto de CECs y drawers de almacenamiento, en un par de racks. La falla se
                         documentaba en LOGSYS de
                         la siguiente manera:
-                    <br>                    
-                    <br>
-                    <p class="line">
-                        FAILED: Process=P9ZZLFNL<br>
-                        Program=hwcfgchk Step=C225<br>
+                        <br>
+                        <br>
+                        <p class="line">
+                            FAILED: Process=P9ZZLFNL<br>
+                            Program=hwcfgchk Step=C225<br>
+                        </p>
                     </p>
-                </p>
                 </p>
                 <p class="author">
                     Creado por: Cuauhtemoc Lopez Magaña
