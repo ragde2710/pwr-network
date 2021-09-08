@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #092d5c;
+    --secondary-color: #0b60a6;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: whitesmoke;
+}

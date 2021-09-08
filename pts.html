@@ -1,71 +1,95 @@
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="PTS debug tracking and support"/>
-        <title>PTS Renewed</title>
-        <link rel="stylesheet" href="./css/style.css"/>
-        <link rel="shortcut icon" href="./images/power-logo.png">
-    </head>
-    <body>
-        <nav class="nav-bar">      
-            <ul class="nav-bar_ul">
-                <li>  
-                    <a href="./index.html">  <!--hover-->
-                        <img class="navbar_logo" 
-                            src="./resources/images/logoheader.png" 
-                            alt="Logo Power"
-                        >
-                    </a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="PTS debug tracking and support" />
+    <title>PTS Renewed</title>
+    <link rel="stylesheet" href="./css/main-style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pts-style.css" />
+    <link rel="shortcut icon" href="./images/power-logo.png">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-bar_ul">
+            <li>
+                <a href="./index.html">
+                    <!--hover-->
+                    <img class="navbar_logo" src="./resources/images/logoheader.png" alt="Logo Power">
+                </a>
+            </li>
+            <div class="nav-bar_left">
+                <li>
+                    <a class="nav-bar_item" href="./forum.html">Forum</a>
                 </li>
-                <div class="nav-bar_left">
-                    <li >
-                        <a class="nav-bar_item" href="./forum.html">Forum</a>
-                    </li>
-                    <li>
-                        <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
-                    </li>
-                    <li>
-                        <a class="nav-bar_item" href="./golden.html">Golden Inventory</a>
-                    </li>
-                </div>
-            </ul>
-        </nav>
-        <header class="header">
-            <h1 class="title-header">PTS</h1>
-        </header>  
-        <div class="header_text-help">
-          <!--use GET, not POST-->  
-            <form class="header_text-help" method="POST">
-                Serial number: 
-                    <input type="text" name="fistname">
-                    <br><br>
-                Sistem Number: 
-                    <input type="text"name="lastname">
-                    <br><br>
-                    <input type="radio" name="GENDER"value="male">VPD<br>
-                    <input type="radio" name="GENDER"value="female">No serial<br>
-                    <input type="radio" name="GENDER"value="other">TA location<br><br>
-                TA Cluster
-                    <input type="email"name="email"><br><br>
-                PS
-                    <input type="password"name="password"min="5"><br><br>
-                Part<br>
-                    <input type="checkbox" name="automatic" >xyz<br>
-                    <input type="checkbox" name="standart" >xyz<br><br>
-                Area<br>
-                    <select name="car brand">
-                        <option value="VW" name="vw">Fab test</option>
-                        <option value="VOLVO" name="volvo">Test</option>
-                        <option value="NISSAN" name="nissan">MES</option>
-                        <option value="HYUNDAI" name="hyundai">Denali</option>   
-                    </select>
-                    <br><br>
-                <input type="submit" value="continue">
-                <input type="reset" value="delete">
-            </form>
-        </div>
-        <footer class="footer">
-            <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3</a>
-        </footer>  
-    </body>
+                <li>
+                    <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
+                </li>
+                <li>
+                    <a class="nav-bar_item" href="./golden.html">Golden Inventory</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="title-header">PTS</h1>
+    </header>
+    <div class="form">
+        <form method="POST">
+            <div class="serial">
+                <label for="name">Serial Number</label>
+                <br>
+                <input type="text" id="name" name="sn_name">
+            </div>
+            <br>
+            <div class="system">
+                <label for="name">System Number</label>
+                <br>
+                <input type="text" id="name" name="system_name">
+            </div>
+            <br>
+            <div class="options">
+                <input type="radio" name="GENDER" value="male">VPD
+                <input type="radio" name="GENDER" value="female">No Serial
+                <input type="radio" name="GENDER" value="other">TA location<br>
+            </div>
+            <br>
+            <div class="ta-cluster">
+                <label for="name">TA Cluster</label>
+                <input type="text" id="name" name="ta_name">
+            </div>
+            <div class="ps">
+                <label for="name">ps</label>
+                <input type="text" id="name" name="ps_name">
+            </div>
+            <div class="pass">
+                <label for="name">password</label>
+                <input type="password" name="password" min="5">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="automatic">xyz<br>
+                <input type="checkbox" name="standart">xyz<br><br>
+            </div>
+            <div class="area">
+                <label for="name">Area</label>
+                <select name="sys-brand">
+                    <option value="FabTest" name="FabTest">Fab test</option>
+                    <option value="Test" name="Test">Test</option>
+                    <option value="MES" name="MES">MES</option>
+                    <option value="Denali" name="Denali">Denali</option>
+                </select>
+            </div>
+            </select>
+            <br><br>
+            <input type="submit" value="continue">
+            <input type="reset" value="delete">
+        </form>
+    </div>
+    <footer class="footer">
+        <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3</a>
+    </footer>
+</body>
+
 </html>

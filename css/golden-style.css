@@ -1,0 +1,34 @@
+.button-so {
+	text-align: center;
+}
+
+.tableGolden {
+	margin: 50px auto;
+	width: auto;
+}
+
+.tableGolden-container {
+	margin: 50px auto;
+	width: auto;
+	text-align: center;
+}
+
+thead {
+	background-color: var(--primary-color);
+	border-bottom: solid 5px var(--secondary-color);
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+tr:hover td {
+	background-color: var(--secondary-color);
+	color: white;
+}
+
+th,
+td {
+	padding: 10px;
+}
