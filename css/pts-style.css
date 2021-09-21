@@ -1,31 +1,26 @@
 .form {
     position: relative;
-    width  : 740px;
-    height : 498px;
-    margin : 0 auto;
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 3%;
     text-align: center;
-    border: 10px black;
-    border-style: double;
-  }
-.serial{
+    box-shadow: var(--shadow);
 }
-.system{
-}
-.options{
 
-}
-.ta-cluster{
+.serial {}
 
-}
-.ps{
+.system {}
 
-}
-.password{
+.options {}
 
-}
-.area{
+.ta-cluster {}
 
-}
-.check{
+.ps {}
 
-}
+.password {}
+
+.area {}
+
+.check {}

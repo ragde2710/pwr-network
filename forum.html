@@ -13,86 +13,66 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <ul class="nav-bar_ul">
+    <nav class="navbar">
+        <ul>
             <a href="./index.html">
-                <img class="navbar_logo" src="./resources/images/logoheader.png" alt="Logo Power">
+                <img class="navbar_logo" src="./resources/images/ibm.png" alt="Logo Power">
             </a>
-            <div class="nav-bar_left">
+            <div>
                 <li>
-                    <a class="nav-bar_item" href="./pts.html">PTS</a>
+                    <a href="./pts.html">PTS</a>
                 </li>
                 <li>
-                    <a class="nav-bar_item" href="./docs.html">Helps and Docs</a>
+                    <a href="./forum.html">Forum</a>
                 </li>
                 <li>
-                    <a class="nav-bar_item" href="./golden.html">Golden Inventory</a>
+                    <a href="./docs.html">Helps and Docs</a>
+                </li>
+                <li>
+                    <a href="./golden.html">Golden Inventory</a>
                 </li>
             </div>
         </ul>
     </nav>
     <section id="main-content">
         <header class="header">
-            <h1 class="title-header">Forum</h1>
+            <h1 class="title-header"> Forum</h1>
         </header>
         <div class="main-forum">
             <div class="principal">
                 <h1>Aporte: Comando sginfo</h1>
                 <p>
-                    El comando sginfo nos permite obtener información de los discos SCSI instalados en el sistema. Para
-                    ello solo tenemos que ejecutar el comando con la opción deseada –según la información buscada– e
-                    indicar el dispositivo.
-                    <br><br>
-                    Por ejemplo:
+                    El comando sginfo nos permite obtener información de los discos SCSI instalados en el sistema. Para ello solo tenemos que ejecutar el comando con la opción deseada –según la información buscada– e indicar el dispositivo.
+                    <br><br> Por ejemplo:
                     <br>
                     <p class="line">
                         <i>sginfo -s /dev/sda</i>
                     </p>
                     <br><br>
                     <p>
-                        La opción y el dispositivo indicado son -s y /dev/sda, respectivamente. Con -s obtenemos el
-                        número
-                        de serie (serial) del
-                        dispositivo. Así:
+                        La opción y el dispositivo indicado son -s y /dev/sda, respectivamente. Con -s obtenemos el número de serie (serial) del dispositivo. Así:
                         <br><br>
                         <p class="line">
-                            [/home/user 00:40:20]sginfo -s /dev/sda1<br>
-                            Serial Number 'VBcb66812d-49d22b80 '<br>
+                            [/home/user 00:40:20]sginfo -s /dev/sda1<br> Serial Number 'VBcb66812d-49d22b80 '<br>
                         </p>
                         <br>
                         <p>
-                            Si ejecutamos el comando sin opciones nos arroja información sobre el fabricante, el código
-                            de
-                            producto y la versión del firmware:
+                            Si ejecutamos el comando sin opciones nos arroja información sobre el fabricante, el código de producto y la versión del firmware:
                         </p>
                         <br><br>
                         <p class="line">
-                            [/home/user 00:40:29]sginfo /dev/sda<br>
-                            INQUIRY response (cmd: 0x12)<br>
-                            ----------------------------<br>
-                            Device Type 0<br>
-                            Vendor: ATA<br>
-                            Product: VBOX HARDDISK<br>
-                            Revision level: 1.0<br>
+                            [/home/user 00:40:29]sginfo /dev/sda<br> INQUIRY response (cmd: 0x12)<br> ----------------------------
+                            <br> Device Type 0<br> Vendor: ATA<br> Product: VBOX HARDDISK<br> Revision level: 1.0<br>
                         </p>
                     </p>
                     <br>
                     <p>
-                        Si queremos averiguar mayor información utilizamos la opción -a. Etcétera.
-                        Este comando lo utilizamos recientemente en el área de Pruebas para ayudarnos a resolver una
-                        falla.
-                        La falla se había
-                        presentado en un sistema 5105 (Machine type) con algunos drawers 5147 (MT) de almacenamiento, si
-                        mal
-                        no recuerdo. En
-                        realidad era un conjunto de CECs y drawers de almacenamiento, en un par de racks. La falla se
-                        documentaba en LOGSYS de
-                        la siguiente manera:
+                        Si queremos averiguar mayor información utilizamos la opción -a. Etcétera. Este comando lo utilizamos recientemente en el área de Pruebas para ayudarnos a resolver una falla. La falla se había presentado en un sistema 5105 (Machine type) con algunos drawers
+                        5147 (MT) de almacenamiento, si mal no recuerdo. En realidad era un conjunto de CECs y drawers de almacenamiento, en un par de racks. La falla se documentaba en LOGSYS de la siguiente manera:
                         <br>
                         <br>
                         <p class="line">
-                            FAILED: Process=P9ZZLFNL<br>
-                            Program=hwcfgchk Step=C225<br>
+                            FAILED: Process=P9ZZLFNL<br> Program=hwcfgchk Step=C225<br>
                         </p>
                     </p>
                 </p>
@@ -110,10 +90,6 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <a class="footer-text" href="./colabs.html">&copy; 2021 Made by T3
-        </a>
-    </footer>
 </body>
 
 </html>

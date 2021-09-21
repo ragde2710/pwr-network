@@ -1,34 +1,35 @@
 .button-so {
-	text-align: center;
+    text-align: left;
+    margin-left: 10%;
 }
 
 .tableGolden {
-	margin: 50px auto;
-	width: auto;
+    margin-left: 10%;
 }
 
 .tableGolden-container {
-	margin: 50px auto;
-	width: auto;
-	text-align: center;
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+    width: auto;
+    text-align: center;
 }
 
 thead {
-	background-color: var(--primary-color);
-	border-bottom: solid 5px var(--secondary-color);
-	color: white;
+    background-color: var(--primary-color);
+    border-bottom: solid 5px var(--secondary-color);
+    color: white;
 }
 
 tr:nth-child(even) {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 
 tr:hover td {
-	background-color: var(--secondary-color);
-	color: white;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 th,
 td {
-	padding: 10px;
+    padding: 10px;
 }
