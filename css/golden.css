@@ -1,5 +1,7 @@
 body{
     background-image: url("../background.png");
+    background-image: ("https://github.com/ragde2710/pwr-network/blob/f245f1273a0bed1aaa550a47e94125441d6ec1fe/resources/images/background.png");
+    background-image: (https://github.com/ragde2710/pwr-network/blob/f245f1273a0bed1aaa550a47e94125441d6ec1fe/resources/images/background.png);
     background-position: center;
     background-size: cover;
 }
