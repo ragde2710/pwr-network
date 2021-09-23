@@ -1,48 +1,125 @@
 /* NAV-BAR GENERAL */
-
-.navbar {
-    margin-left: 0px;
-    padding: 0px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 8%;
-    background-color: black;
-    position: fixed;
-    box-shadow: var(--shadow);
-    height: 100%;
-    overflow: auto;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    padding: 5px 0 5px 0px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navbar li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-.navbar_logo {
-    position: relative;
-    display: table-cell;
-    margin: auto;
-    width: 70%;
+header {
+    background:#333;
+    color:transparent;
+    width:100%;
     height: 5%;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 18px;
 }
 
-.navbar_logo:hover {
-    background: #0b60a6;
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 0;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+.logo{
+    height: 2rem;
+    width: 3.2rem;
+    margin-left: 0.5%;
+}
+
+.page-title{
+    margin-left: auto;
+}
+input#abrir-cerrar:checked ~ #sidebar {
+    width: 8%;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left: 0;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: auto;
+    left: 0;
+    z-index: 1;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.4s;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding: 2%;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    border-bottom: 0.01rem solid black;
+    text-align: center;
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
 }
 
 /*HEADER GENERAL*/
@@ -50,15 +127,17 @@
 .title-header {
     display: block;
     box-shadow: var(--shadow3);
-    text-align: left;
+    text-align: center;
     padding-top: 0px;
     margin-top: 0px;
-    margin-left: 8%;
-    font-size: 20px;
+    margin-left: 0;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 5px;
-    color: black;
+    background-color: transparent;
+    color: white;
     animation: animationTitleLeft 0.5s;
+    width: 100%;
 }
 
 @keyframes animationTitleLeft {

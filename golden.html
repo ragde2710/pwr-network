@@ -1,112 +1,69 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="PTS debug tracking and support" />
-    <title>PTS Renewed</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Inventory</title>
     <link rel="stylesheet" href="./css/main-style.css" />
-    <link rel="stylesheet" href="./css/golden-style.css" />
+    <link rel="stylesheet" href="./css/golden.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="shortcut icon" href="./resources/images/power-logo.png">
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul>
-            <a href="./index.html">
-                <img class="navbar_logo" src="./resources/images/ibm.png" alt="Logo Power">
-            </a>
-            <div>
-                <li>
-                    <a href="./pts.html">PTS</a>
-                </li>
-                <li>
-                    <a href="./forum.html">Forum</a>
-                </li>
-                <li>
-                    <a href="./docs.html">Helps and Docs</a>
-                </li>
-                <li>
-                    <a href="./golden.html">Golden Inventory</a>
-                </li>
-            </div>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">
+        <span class="abrir">
+            <img class="logo" src="./resources/images/ibm.png" />
+        </span>
+        <span class="cerrar">
+            <img class="logo" src="./resources/images/ibm.png" />
+        </span>
+    </label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pts.html">PTS</a></li>
+            <li><a href="./forum.html">Forum</a></li>
+            <li><a href="./golden.html">Golden Inventory</a></li>
+            <li><a href="./docs.html">Docs</a></li>
         </ul>
-    </nav>
-    <header class="header">
-        <h1 class="title-header"> Golden Inventory</h1>
-    </header>
-    <div class="button-so">
-        <br>SO
-        <select name="SO">
-            <option value="PS" name="P-series">P-series</option>
-            <option value="IS" name="I-series">I-series</option>
-            <option value="DNLI" name="Denali">Denali</option>
-        </select>
-
     </div>
-    <div class="tableGolden">
-        <table class="tableGolden-container">
-            <thead>
-                <tr>
-                    <th># Golden</th>
-                    <th>Model</th>
-                    <th>SO</th>
-                    <td>Work Unit</td>
-                    <td>FSP1</td>
-                    <td>Status</td>
-                    <th>Comments</th>
-                    <th>Barcode</th>
-                </tr>
-            </thead>
-            <tr>
-                <td> A110 </td>
-                <td> Tuleta 4u </td>
-                <td> P series </td>
-                <td> 3BDLYYJB </td>
-                <td> 98BE944CA096 </td>
-                <td> Ready to test </td>
-                <th>Funcionando al 100% </th>
-                <th><img src="./resources/images/barcode.gif" /></th>
-            </tr>
-            <tr>
-                <td>G1</td>
-                <td>Tuleta 4u</td>
-                <td> I series</td>
-                <td>##########</td>
-                <td>##########</td>
-                <td>##########</td>
-                <th>Funcionando al 100%</th>
-            </tr>
-            <tr>
-                <td>G2</td>
-                <td>Zeppellin</td>
-                <td> P series</td>
-                <td>##########</td>
-                <td>##########</td>
-                <td>##########</td>
-                <th>Funcionando al 100%</th>
-            </tr>
-            <tr>
-                <td>G3</td>
-                <td>Brazo</td>
-                <td> P series</td>
-                <td>##########</td>
-                <td>##########</td>
-                <td>##########</td>
-                <th>Funcionando al 100%</th>
-            </tr>
-            <tr>
-                <td>G4</td>
-                <td>Brazo</td>
-                <td> P series</td>
-                <td>##########</td>
-                <td>##########</td>
-                <td>##########</td>
-                <th>Funcionando al 100%</th>
-            </tr>
-        </table>
+    <div class="gold-cont">
+        <div class="box">
+            <a href="./table-golden.html" data-icon="&#xf0ae;">
+                <h3>Mack Golden</h3>
+                <img class="imagen" src="./resources/images/mack.png" alt="mack" />
+            </a>
+        </div>
+        <div class="box">
+            <a href="./table-golden.html" data-icon="&#xf0ae;">
+                <h3>Zepellin</h3>
+                <img class="zep" src="./resources/images/zeppellin.png" alt="Zepellin" />
+            </a>
+        </div>
+        <div class="box">
+            <a href="./table-golden.html" data-icon="&#xf0ae;">
+                <h3>Tuleta/ZZ</h3>
+                <img  class="zz" src="./resources/images/zz.png" alt="ZZ" />
+            </a>
+        </div>
+        <div class="box">
+            <a href="./table-golden.html" data-icon="&#xf0ae;">
+                <h3>Fleetwood/Brazo</h3>
+                <img class="imagen" src="./resources/images/fleet.png" alt="Fleetwood" />
+            </a>
+        </div>
+        <div class="box">
+            <a href="./table-golden.html" data-icon="&#xf0ae;">
+                <h3>Others</h3>
+                <img class="imagen" src="./resources/images/POWER.png" alt="power-logo" />
+            </a>
+        </div>
+
     </div>
 </body>
 
